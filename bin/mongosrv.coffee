@@ -9,4 +9,4 @@ if not existsSync 'mongodata'
   console.log 'creating mongodata directory'
   mkdirSync 'mongodata'
 
-exec 'mongod --dbpath ./mongodata'
+exec 'mongod --dbpath ./mongodata', {async: true}

@@ -17,6 +17,8 @@
     mkdirSync('mongodata');
   }
 
-  exec('mongod --dbpath ./mongodata');
+  exec('mongod --dbpath ./mongodata', {
+    async: true
+  });
 
 }).call(this);
