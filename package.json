@@ -1,10 +1,12 @@
 {
   "name": "mongosrv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "command to launch mongod locally with local mongodata directory",
   "main": "bin/mongosrv",
   "dependencies": {
-    "shelljs": "^0.3.0"
+    "mkdirp": "^0.5.0",
+    "shelljs": "^0.3.0",
+    "yamlfile": "^1.0.1"
   },
   "devDependencies": {},
   "bin": {
